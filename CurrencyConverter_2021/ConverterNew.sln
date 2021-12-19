@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
-VisualStudioVersion = 16.0.31911.196
+VisualStudioVersion = 16.0.30717.126
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConverterNew", "CurrencyConverter_2021\ConverterNew.csproj", "{CE7AACC7-6BCA-46F6-9778-FE268AE807FA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConverterNew", "ConverterNew.csproj", "{CE7AACC7-6BCA-46F6-9778-FE268AE807FA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,6 +20,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {97B4D5AF-1EBB-4A12-BF6A-224A0A015F18}
+		SolutionGuid = {71188E94-D5DA-44E0-B64D-80C99A26F9D1}
 	EndGlobalSection
 EndGlobal
