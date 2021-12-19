@@ -20,4 +20,7 @@
   <ItemGroup>
     <Compile Remove="ParserBase.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BusinessLogicLayer\BusinessLogicLayer.csproj" />
+  </ItemGroup>
 </Project>

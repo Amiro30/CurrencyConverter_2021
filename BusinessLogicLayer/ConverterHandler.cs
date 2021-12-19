@@ -1,15 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.IO;
-using System.Linq;
-using System.Runtime.CompilerServices;
-using System.Text;
-using System.Threading.Tasks;
+﻿using BusinessLogicLayer.DataTransferObjects;
+using BusinessLogicLayer.Services;
 
-namespace ConverterNew
+namespace BusinessLogicLayer
 {
-    class Converter
+    public class ConverterHandler
     {
         private  MinfinParser minfinParser = new MinfinParser("http://minfin.com.ua/currency/banks/");
         private IuaParser iuaParser = new IuaParser("http://finance.i.ua/bank/4/");

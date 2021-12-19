@@ -1,8 +1,8 @@
-﻿ 
+﻿
 
-namespace ConverterNew
+namespace BusinessLogicLayer.DataTransferObjects
 {
-    enum Currency
+    public enum Currency
    {
        USD,
        EUR,
@@ -10,13 +10,13 @@ namespace ConverterNew
        UAH,
    }
 
-    enum Operation
+    public enum Operation
     {
         Sale,
         Buy,
     }
 
-    enum Bank
+    public enum Bank
     {
         Aval,
         Average

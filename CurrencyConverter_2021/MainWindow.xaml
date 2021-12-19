@@ -87,29 +87,33 @@
             <StackPanel Name="Panel0" Orientation="Horizontal" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" >
                 <TextBox Name ="resUAH" Height="25" Width="88" />
                 <TextBlock Name="labelUAH" Text="UAH" Height="25" Width="35" Padding="5"/>
-                <TextBox Name ="actualUAH" ToolTip="Подсказка" Height="25" Width="88"/>
+                <!--TODO temporarily disable, i.e it is not configured-->
+                <!--<TextBox Name ="actualUAH" ToolTip="Подсказка" Height="25" Width="88"/>-->
                 <TextBlock   Height="25" Width="25" Padding="5" />
             </StackPanel>
             <StackPanel Name="Panel1" Orientation="Horizontal" Grid.Row="1" >
                 <TextBox Name ="resUSD" Height="25" Width="88" />
                 <TextBlock Name="labelUSD" Text="USD" Height="25" Width="35" Padding="5"/>
-                <TextBox Name ="actualUSD"  Height="25" Width="88"/>
+                <!--TODO temporarily disable, i.e it is not configured-->
+                <!--<TextBox Name ="actualUSD"  Height="25" Width="88"/>-->
                 <TextBlock Name="toolTip1" Text="?" TextAlignment="Center" Height="25" Width="25" Padding="5" FontSize="14" FontFamily="Arial" 
                             Background="#87aff2" Foreground="#FFF7F5F5" FontWeight="Bold"
-                            ToolTip="WahalaMe?"/>
+                            ToolTip="Hint should be there))"/>
             </StackPanel>
             <StackPanel Name="Panel2" Orientation="Horizontal" Grid.Row="2" >
                 <TextBox Name ="resEUR" Height="25" Width="88" />
                 <TextBlock Name="labelEUR" Text="EUR" Height="25" Width="35" Padding="5"/>
-                <TextBox Name ="actualEUR"  Height="25" Width="88"/>
+                <!--TODO temporarily disable, i.e it is not configured-->
+                <!--<TextBox Name ="actualEUR"  Height="25" Width="88"/>-->
                 <TextBlock Name="toolTip2" Text="?" TextAlignment="Center" Height="25" Width="25" Padding="5" FontSize="14" FontFamily="Arial" 
                             Background="#87aff2" Foreground="#FFF7F5F5"
-                            ToolTip="WahalaMe?" FontWeight="Bold"/>
+                            ToolTip="Hint should be there))" FontWeight="Bold"/>
             </StackPanel>
             <StackPanel Name="Panel3" Orientation="Horizontal" Grid.Row="3" >
                 <TextBox Name ="resRUB" Height="25" Width="88" />
                 <TextBlock Name="labelRUB" Text="RUB" Height="25" Width="35" Padding="5"/>
-                <TextBox Name ="actualRUB"  Height="25" Width="88"/>
+                <!--TODO temporarily disable, i.e it is not configured-->
+                <!--<TextBox Name ="actualRUB"  Height="25" Width="88"/>-->
                 <TextBlock  Name="toolTip3" Text="?" TextAlignment="Center" Height="25" Width="25" Padding="5" FontSize="14" FontFamily="Arial" 
                             Background="#87aff2" Foreground="#FFF7F5F5" FontWeight="Bold"
                             ToolTip="WahalaMe?"/>

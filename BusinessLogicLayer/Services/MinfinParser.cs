@@ -1,14 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.IO;
-using System.Linq;
+﻿using System.Collections.Generic;
 using System.Net;
 using System.Text;
 using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 
-namespace ConverterNew
+namespace BusinessLogicLayer.Services
 {
     class MinfinParser
     {
@@ -32,7 +27,6 @@ namespace ConverterNew
         }
 
 
-
         public MinfinParser(string url)
         {
             ServicePointManager.Expect100Continue = true;
@@ -51,13 +45,13 @@ namespace ConverterNew
             foreach (Match m in buyCourses)
             {
                 //write to List all digits, that match
-                buyCollection.Add(float.Parse(m.Groups[1].ToString().Replace(".", ",")));
+                buyCollection.Add(float.Parse(m.Groups[1].ToString()));
             }
 
             foreach (Match m in saleCourses)
             {
                 //write to List all digits, that match
-                saleCollection.Add(float.Parse(m.Groups[1].ToString().Replace(".", ",")));
+                saleCollection.Add(float.Parse(m.Groups[1].ToString()));
             }
             FillCurrencyTable();
         }

@@ -14,7 +14,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
-using System.Windows.Shapes;
+using BusinessLogicLayer.DataTransferObjects;
+using BusinessLogicLayer;
 
 namespace ConverterNew
 {
@@ -25,7 +26,7 @@ namespace ConverterNew
         // operation = true - SELL
         // operation = false - BUY
          
-        private Converter converter = new Converter();
+        private ConverterHandler converter = new ConverterHandler();
        
         
         public MainWindow()
@@ -127,25 +128,23 @@ namespace ConverterNew
         }
         private void UpdateCourse()
         {
-
             Currency comboBox1SelectedIndex = (Currency)comboBox1.SelectedIndex;
 
             Operation operation = radioBtnSale.IsChecked.Value ? Operation.Buy : Operation.Sale;
 
-            actualUSD.Text = (converter.GetMatrix(comboBox2.SelectedIndex)[(int)operation, (int)Currency.USD]).ToString("0.000");
-            actualEUR.Text = (converter.GetMatrix(comboBox2.SelectedIndex)[(int)operation, (int)Currency.EUR]).ToString("0.000");
-            actualRUB.Text = (converter.GetMatrix(comboBox2.SelectedIndex)[(int)operation, (int)Currency.RUB]).ToString("0.0000");
-            actualUAH.Text = (converter.GetMatrix(comboBox2.SelectedIndex)[1-(int)operation, (int)comboBox1SelectedIndex]).ToString("0.000");
+            //TODO temporarily disable
+            //actualUSD.Text = (converter.GetMatrix(comboBox2.SelectedIndex)[(int)operation, (int)Currency.USD]).ToString("0.000");
+            //actualEUR.Text = (converter.GetMatrix(comboBox2.SelectedIndex)[(int)operation, (int)Currency.EUR]).ToString("0.000");
+            //actualRUB.Text = (converter.GetMatrix(comboBox2.SelectedIndex)[(int)operation, (int)Currency.RUB]).ToString("0.0000");
+            //actualUAH.Text = (converter.GetMatrix(comboBox2.SelectedIndex)[1-(int)operation, (int)comboBox1SelectedIndex]).ToString("0.000");
          }
         private void radioBtnSale_Checked(object sender, RoutedEventArgs e)
         {
-          
             UpdateCourse();
             Update();
         }
         private void radioBtnBuy_Checked(object sender, RoutedEventArgs e)
         {
-            
             UpdateCourse();
             Update();
         }
@@ -155,7 +154,5 @@ namespace ConverterNew
             UpdateCourse();
             Update();
         }
-
-        
     }
 }
