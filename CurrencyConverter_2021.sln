@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.31911.196
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConverterNew", "CurrencyConverter_2021\ConverterNew.csproj", "{CE7AACC7-6BCA-46F6-9778-FE268AE807FA}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BusinessLogicLayer", "BusinessLogicLayer\BusinessLogicLayer.csproj", "{6F6D3D97-F2C2-4100-8F37-D560BBDEA6E8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Data Access Layer", "Data Access Layer\Data Access Layer.csproj", "{7D8C5AB1-7B41-48CF-9FBD-458C2644CE97}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{CE7AACC7-6BCA-46F6-9778-FE268AE807FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CE7AACC7-6BCA-46F6-9778-FE268AE807FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CE7AACC7-6BCA-46F6-9778-FE268AE807FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F6D3D97-F2C2-4100-8F37-D560BBDEA6E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F6D3D97-F2C2-4100-8F37-D560BBDEA6E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F6D3D97-F2C2-4100-8F37-D560BBDEA6E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F6D3D97-F2C2-4100-8F37-D560BBDEA6E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D8C5AB1-7B41-48CF-9FBD-458C2644CE97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D8C5AB1-7B41-48CF-9FBD-458C2644CE97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D8C5AB1-7B41-48CF-9FBD-458C2644CE97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D8C5AB1-7B41-48CF-9FBD-458C2644CE97}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
